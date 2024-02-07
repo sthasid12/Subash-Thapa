@@ -1,0 +1,246 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins',sans-serif;
+}
+.navbar{
+	width: 100%;
+	margin: auto;
+	padding: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: sticky;
+}
+.navbar ul{
+     display: flex;
+     list-style: none;
+     margin: 20px 0;	
+}
+.navbar ul li{
+	font-family: century;
+	font-size: 1.1rem;
+	font-weight: bold;
+
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 8px 25px;
+	transition: all 0.5s ease;
+}
+.navbar ul li a:hover{
+	background-color: rgb(230, 34, 181);
+	color:rgb(41, 0, 226);
+	box-shadow: 0 0 10px rgb(236, 60, 60);
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	background: rgb(5, 5, 207);
+	left: 0;
+	bottom: 6px;
+	transform: scaleX(0);
+	transition: transistion .5s;
+}
+.navbar ul li:hover:after{
+	transform-origin: left;
+	transform: scaleX(0);
+
+}
+#home{
+	display: flex;
+	flex-direction: column;
+	background-image: url('home.png');
+	background-size: cover;
+	height: 840px;
+	justify-content: center;
+	align-items: center;
+}
+#home::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url('hero.jpg');
+	height: 1000px;
+	width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main{
+	   display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    	align-items: center;
+    	position: absolute;
+
+
+}
+ .rowing{
+ 	    flex-basis: 35%;
+ }
+ .rowing img{
+ width: 80%;
+    border-radius: 5px;
+
+ }
+.headings{
+	font-family: century;
+	font-size: 3rem;
+	text-align: center;
+	color: rgb(255, 3, 3);
+	margin: 40px 0px;
+}
+
+.btn{
+	padding: 10px 35px;
+	background-color: transparent;
+	border: 1px solid rgb(4, 69, 248);
+	color: white;
+	outline: none;
+	transition: .6s ease;
+}
+.btn:hover{
+	cursor: pointer;
+	background-color: white;
+	color: rgb(255, 0, 119);
+	box-shadow: 0 0 5px rgb(255, 2, 2), 0 0 10px rgb(163, 12, 194), 0 0 15px white;
+	font-weight: bold;
+}
+#about{
+	display: flex;
+	height: 950px;
+	flex-direction: column;
+	box-sizing: content-box;
+	padding: 20px;
+	margin-bottom: 50px;
+	background-image: url('about.jpg');
+}
+#pic{
+display: flex;
+}
+#pic img{
+	width: 250px;
+	height: 450px;
+	border-radius: 15px;
+}
+#intro{
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	padding: 10px;
+}
+#intro h2{
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+#service{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	background-image: url('services.webp');
+}
+.row{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+.box{
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	height: 450px;
+	border: 1px solid rgb(236, 23, 255);
+	margin: 10px;
+	align-items: center;
+	text-align: justify;
+	padding: 10px;
+	border-radius: 15px;
+	background: linear-gradient(to top, rgb(118, 42, 241) 50%, white 50%);
+	background-size: 100% 200%;
+	}
+#contact{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-image: url('black.png');
+	color: rgb(2, 245, 2);
+	padding: 20px;
+}
+.social-icons{
+	margin-top: 30px;
+	box-sizing: border-box;
+}
+.social-icons a{
+	font-size: 30px;
+	margin-right: 15px;
+	color: #1a0cd4;
+	display: inline-block;
+}
+.contact-left{
+	flex-basis: 35%;
+}
+.contact-right{
+	flex-basis: 60%;
+}
+.contact-left p{
+	margin-top: 30px;
+}
+.contact-left p i{
+	color: #03e622;
+	margin-right: 15px;
+	font-size: 25px;
+}
+.social-icons{
+	margin-top: 30px;
+}
+.social-icons a{
+	text-decoration: none;
+	font-size: 30px;
+	margin-right: 15px;
+	color: #ffffff;
+	display: inline-block;
+	transition: transform 0.5s;
+}
+.social-icons a:hover{
+	color: #0206f1;
+	transform: translateY(5px);
+}
+.form{
+     margin: 35px;
+     display: flex;
+     flex-direction: column;
+     box-sizing: border-box;
+     align-items: center;
+     margin: 20px 0px;
+}
+.input-field{
+	width: 400px;
+	height: 40px;
+	margin-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #510ad4;
+	border-radius: 14px;
+	outline: none;
+}
+.textarea-field{
+	height: 150px;
+	margin-top: 10px;
+}
+.btn{
+    border-radius: 20px;
+    color: #ffffff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #2fff4e;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;	
+}
